@@ -132,6 +132,9 @@ main{
       height: 100%;
       width: 100%;  
   }
+  .desc{
+    padding-left: 5px
+  }
 }
 
 @media (max-width: 560px){
