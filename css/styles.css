@@ -80,10 +80,15 @@ main{
 .contact{
     margin: 1rem 2rem;
 }
-.name{
+.name, .age{
     text-align: center;
     padding: 0;
     margin-bottom: 0;
+}
+.age{
+  margin: 6px;
+  font-size: 14px;
+    font-style: italic;
 }
 .email{
     font-size: 13px;

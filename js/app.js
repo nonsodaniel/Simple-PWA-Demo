@@ -29,6 +29,7 @@ const fetchUsers = () => {
             </div>
             <h3 class="name">${title} ${first} ${last}</h3>
             <div class="email">${email}</div>
+            <h3 class="age">${age} years</h3>
           </div>
           <div class="contact">
             <div class="phone-wrap">
