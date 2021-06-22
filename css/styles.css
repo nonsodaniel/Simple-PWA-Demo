@@ -1,4 +1,3 @@
-@import './font.css';
 
 :root{
     --text--pry--color:  #6c757d;
@@ -21,8 +20,8 @@ main{
     height: 50px;
     margin: 2rem 0;
 }
-.logo-wrap > img{
-    height: auto;
+.logo__img{
+    height: 100%;
     width: 100%;  
 }
 .header-title{
@@ -129,6 +128,10 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     }
+    .logo__img{
+      height: 100%;
+      width: 100%;  
+  }
 }
 
 @media (max-width: 560px){

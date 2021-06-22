@@ -1,10 +1,5 @@
 
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("/sw.js")
-    .then((reg) => console.log("service worker registered", reg))
-    .catch((err) => console.log("service worker not registered", err));
-}
+
 
 // var jobs = []
 const BASE_URL = "https://randomuser.me/api/1.2/?results=10";
