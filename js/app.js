@@ -2,6 +2,8 @@
 
 const BASE_URL = "https://randomuser.me/api/1.2/?results=15";
 const userList = document.querySelector(".users");
+let appContainer = document.querySelector(".app-container");
+
 
 const fetchUsers = () => {
   fetch(`${BASE_URL}`)
@@ -55,14 +57,18 @@ const fetchUsers = () => {
         });
         userList.innerHTML = html;
       } else {
-        let html = "";
-        html = `<div>No Data Available</div>`;
-        userList.innerHTML = html;
+        appContainer.innerHTML = `<div>No Data Available</div>`;
       }
     });
 };
 
-fetchUsers();
+const ifConnected = window.navigator.onLine;
+if (ifConnected) {
+  fetchUsers();
+} else {
+  appContainer.innerHTML = `<h2 class="err-internet">Kindly check your Internet connection and click  <a href=${window.location.href} class="pointer">Refresh</a></h2>`;
+}
+
 
 
 

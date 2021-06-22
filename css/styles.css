@@ -115,6 +115,18 @@ main{
     font-size: 20px;
     color: #adb5bd;
 }
+.err-internet, .err-noData{
+  color: hsl(11deg 100% 42%);
+  text-align: center;
+  margin-top: 10rem;
+}
+.err-noData{
+  color: #47525d;
+}
+.err-internet a{
+  font-style: italic;
+  color: hsl(11deg 100% 42%);
+}
 
 
 @media (max-width: 1400px){
